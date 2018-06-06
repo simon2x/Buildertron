@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*
+"""
 Copyright (c) 2018 Simon Wu <swprojects@runbox.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -17,3 +20,17 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+"""
+
+from forms.uisubmitissuedialog import Ui_SubmitIssueDialog
+from PyQt5.QtWidgets import QDialog
+
+
+class SubmitIssueDialog(QDialog, Ui_SubmitIssueDialog):
+
+    def __init__(self, parent):
+        super(SubmitIssueDialog, self).__init__(parent)
+
+        self.ui = Ui_SubmitIssueDialog()
+        self.ui.setupUi(self)
+        self.open()

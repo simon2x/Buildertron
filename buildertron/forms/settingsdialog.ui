@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingsDialog</class>
+ <widget class="QDialog" name="SettingsDialog">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Settings</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="topMargin">
+      <number>5</number>
+     </property>
+     <property name="rightMargin">
+      <number>5</number>
+     </property>
+     <property name="bottomMargin">
+      <number>5</number>
+     </property>
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_3">
+        <attribute name="title">
+         <string>General</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="2" column="0">
+          <widget class="QCheckBox" name="checkBox_AskSaveOnClose">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>Ask To Save On Closing Builderton</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QCheckBox" name="checkBox_RecentFiles">
+           <property name="text">
+            <string>Recent Files History</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QCheckBox" name="checkBox_SplashScreen">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>Show Splashscreen</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>Commands</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="1" column="0">
+          <widget class="QCheckBox" name="checkBox_Distclean">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>Distclean</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="QCheckBox" name="checkBox_Terminal">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>Term</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_Clean">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>buildozer {target} clean</string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="1">
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="lineEdit_Deploy">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>buildozer {target} deploy</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QCheckBox" name="checkBox_Run">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>Run</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="lineEdit_Run">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>buildozer {target} run</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QLineEdit" name="lineEdit_Serve">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>buildozer {target} serve</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QCheckBox" name="checkBox_Deploy">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>Deploy</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QCheckBox" name="checkBox_Serve">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>Serve</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QCheckBox" name="checkBox_Build">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>Build</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_Distclean">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>buildozer distclean</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>Override terminal. This command is prepended to the buildozer commands</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="1">
+          <widget class="QLineEdit" name="lineEdit_Terminal">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>xterm -hold -e </string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QLabel" name="label_11">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QCheckBox" name="checkBox_Clean">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>Clean</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="lineEdit_Build">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>buildozer {target} {buildmode}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>Override buildozer commands</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QPushButton" name="default_Clean">
+           <property name="text">
+            <string>Default</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QPushButton" name="default_Build">
+           <property name="text">
+            <string>Default</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="QPushButton" name="default_Deploy">
+           <property name="text">
+            <string>Default</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2">
+          <widget class="QPushButton" name="default_Run">
+           <property name="text">
+            <string>Default</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="2">
+          <widget class="QPushButton" name="default_Serve">
+           <property name="text">
+            <string>Default</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="2">
+          <widget class="QPushButton" name="default_Terminal">
+           <property name="text">
+            <string>Default</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QPushButton" name="default_Distclean">
+           <property name="text">
+            <string>Default</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>Targets</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="5" column="1">
+          <widget class="QPlainTextEdit" name="textEdit_CustomTarget"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Add your custom own target names.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>Target names are split by a newline or a comma. For example: android_small, ios_test</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>This feature is intended for buildozer developers. Target names will appear in the target drop-down menu.</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tabBlacklist">
+        <attribute name="title">
+         <string>Blacklist</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="1" column="0">
+          <widget class="QCheckBox" name="checkBox_BlacklistApp">
+           <property name="text">
+            <string>Use App blacklist</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QCheckBox" name="checkBox_BlacklistBuildozer">
+           <property name="text">
+            <string>Use Buildozer blacklist</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QPlainTextEdit" name="textEdit_BlacklistApp">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QPlainTextEdit" name="textEdit_BlacklistBuildozer">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>Ignore keys under the [app] section e.g. p4a.dir, p4a.branch</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>Ignore keys under the [buildozer] section e.g. log_level, bin_dir</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>Blacklist config keys by skipping writing them to spec file when saving</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_4">
+        <attribute name="title">
+         <string>Substitute</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_7">
+         <item row="1" column="0">
+          <widget class="QCheckBox" name="checkBox_SubBuildozer">
+           <property name="text">
+            <string>Substitute key names under [buiildozer] section</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="0" column="1">
+            <widget class="QLabel" name="label_12">
+             <property name="text">
+              <string>You substitute config keys with your own. e.g. p4a.dir=p4a.dir2 will change p4a.dir to p4a.dir2</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPlainTextEdit" name="textEdit_SubApp">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QCheckBox" name="checkBox_SubApp">
+             <property name="text">
+              <string>Substitute key names under [app] section</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPlainTextEdit" name="textEdit_SubBuildozer">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tabTemplate">
+        <attribute name="title">
+         <string>Buildozer Spec Layout</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QScrollArea" name="scrollArea">
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>684</width>
+              <height>426</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>You can define a custom spec layout</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>Note: Commented lines must begin with #</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkBox_CustomSpec">
+               <property name="text">
+                <string>Use custom spec layout</string>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="widget" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout">
+                <item>
+                 <layout class="QGridLayout" name="gridLayout">
+                  <item row="6" column="2">
+                   <widget class="QTextEdit" name="textEdit_CustomSpec">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="html">
+                     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;[app]&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;{app}&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;[buildozer]&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;{buildozer}&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="2">
+                   <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <spacer name="horizontalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="default_CustomSpec">
+                 <property name="text">
+                  <string>Restore Default Layout</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDialogButtonBox" name="buttonBox">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="standardButtons">
+        <set>QDialogButtonBox::Apply|QDialogButtonBox::Cancel|QDialogButtonBox::Save</set>
+       </property>
+       <property name="centerButtons">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>SettingsDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>258</x>
+     <y>494</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>SettingsDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>326</x>
+     <y>494</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_CustomSpec</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>textEdit_CustomSpec</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>210</x>
+     <y>100</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>111</x>
+     <y>137</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_Distclean</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineEdit_Distclean</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>37</x>
+     <y>68</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>123</x>
+     <y>67</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_Clean</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineEdit_Clean</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>39</x>
+     <y>103</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>123</x>
+     <y>102</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_Build</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineEdit_Build</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>39</x>
+     <y>138</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>123</x>
+     <y>137</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_Deploy</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineEdit_Deploy</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>39</x>
+     <y>173</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>123</x>
+     <y>172</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_Run</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineEdit_Run</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>39</x>
+     <y>208</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>123</x>
+     <y>207</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_Serve</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineEdit_Serve</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>39</x>
+     <y>243</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>123</x>
+     <y>242</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_Terminal</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineEdit_Terminal</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>39</x>
+     <y>324</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>123</x>
+     <y>323</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_BlacklistApp</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>textEdit_BlacklistApp</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>44</x>
+     <y>64</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>95</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_BlacklistBuildozer</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>textEdit_BlacklistBuildozer</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>53</x>
+     <y>258</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>92</x>
+     <y>308</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_CustomSpec</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>textEdit_CustomSpec</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>30</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>111</x>
+     <y>137</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_SubApp</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>textEdit_SubApp</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>117</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>118</x>
+     <y>121</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_SubBuildozer</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>textEdit_SubBuildozer</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>93</x>
+     <y>259</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>95</x>
+     <y>286</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>clicked(QAbstractButton*)</signal>
+   <receiver>SettingsDialog</receiver>
+   <slot>onApply()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>466</x>
+     <y>483</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>504</x>
+     <y>634</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onApply()</slot>
+ </slots>
+</ui>

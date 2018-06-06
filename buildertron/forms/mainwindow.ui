@@ -1,0 +1,3445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <widget class="QSplitter" name="splitterMain">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>50</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>400</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="opaqueResize">
+       <bool>true</bool>
+      </property>
+      <property name="handleWidth">
+       <number>0</number>
+      </property>
+      <property name="childrenCollapsible">
+       <bool>false</bool>
+      </property>
+      <widget class="QSplitter" name="splitterTop">
+       <property name="baseSize">
+        <size>
+         <width>700</width>
+         <height>600</height>
+        </size>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="handleWidth">
+        <number>2</number>
+       </property>
+       <property name="childrenCollapsible">
+        <bool>false</bool>
+       </property>
+       <widget class="QTabWidget" name="tabAdvanced">
+        <property name="tabPosition">
+         <enum>QTabWidget::North</enum>
+        </property>
+        <property name="tabShape">
+         <enum>QTabWidget::Rounded</enum>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="Project">
+         <attribute name="title">
+          <string>Project</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QScrollArea" name="scrollArea">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>503</width>
+               <height>698</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="19" column="1">
+               <widget class="QCheckBox" name="checkbox_icon_filename">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QCheckBox" name="checkbox_version_regex">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="0">
+               <widget class="QLabel" name="label_9">
+                <property name="text">
+                 <string>Source Exclude Dirs:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="3">
+               <widget class="QToolButton" name="toolbutton_source_dir">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+              <item row="12" column="2">
+               <widget class="QLineEdit" name="lineedit_source_exclude_exts">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="toolTip">
+                 <string># (list) Source files to exclude (let empty to not exclude anything)</string>
+                </property>
+                <property name="text">
+                 <string>spec</string>
+                </property>
+               </widget>
+              </item>
+              <item row="11" column="1">
+               <widget class="QCheckBox" name="checkbox_source_include_exts">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="0">
+               <widget class="QLabel" name="label_31">
+                <property name="font">
+                 <font>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                  <underline>true</underline>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Source</string>
+                </property>
+               </widget>
+              </item>
+              <item row="16" column="2">
+               <widget class="QLineEdit" name="lineedit_requirements">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string>sqlite3,kivy</string>
+                </property>
+               </widget>
+              </item>
+              <item row="19" column="2">
+               <widget class="QLineEdit" name="lineedit_icon_filename">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string>%(source.dir)s/data/icon.png</string>
+                </property>
+               </widget>
+              </item>
+              <item row="18" column="0">
+               <widget class="QLabel" name="label_77">
+                <property name="text">
+                 <string>Presplash Image:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="0">
+               <widget class="QLabel" name="label_4">
+                <property name="text">
+                 <string>Domain:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="16" column="0">
+               <widget class="QLabel" name="label_78">
+                <property name="text">
+                 <string>Application Requirements:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="11" column="2">
+               <widget class="QLineEdit" name="lineedit_source_include_exts">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="toolTip">
+                 <string># (list) Source files to include (let empty to include all the files)</string>
+                </property>
+                <property name="text">
+                 <string>py,png,jpg,kv,atlas</string>
+                </property>
+               </widget>
+              </item>
+              <item row="16" column="1">
+               <widget class="QCheckBox" name="checkbox_requirements">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="17" column="0">
+               <widget class="QLabel" name="label_76">
+                <property name="text">
+                 <string>Garden Requirements:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="18" column="2">
+               <widget class="QLineEdit" name="lineedit_presplash_filename">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="toolTip">
+                 <string>Presplash of the application</string>
+                </property>
+                <property name="text">
+                 <string>%(source.dir)s/data/presplash.png</string>
+                </property>
+               </widget>
+              </item>
+              <item row="17" column="1">
+               <widget class="QCheckBox" name="checkbox_garden_requirements">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="18" column="1">
+               <widget class="QCheckBox" name="checkbox_presplash_filename">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="0">
+               <widget class="QLabel" name="label_5">
+                <property name="text">
+                 <string>Source Dir:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="0">
+               <widget class="QLabel" name="label_29">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="19" column="0">
+               <widget class="QLabel" name="label_75">
+                <property name="text">
+                 <string>Application Icon:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="2">
+               <widget class="QLineEdit" name="lineedit_package_name">
+                <property name="text">
+                 <string>myapp</string>
+                </property>
+               </widget>
+              </item>
+              <item row="11" column="0">
+               <widget class="QLabel" name="label_6">
+                <property name="text">
+                 <string>Source Include Exts:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="17" column="2">
+               <widget class="QLineEdit" name="lineedit_garden_requirements">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="1">
+               <widget class="QCheckBox" name="checkbox_source_exclude_dirs">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_79">
+                <property name="font">
+                 <font>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                  <underline>true</underline>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Application</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <widget class="QLineEdit" name="lineedit_title">
+                <property name="text">
+                 <string>AppTitle</string>
+                </property>
+                <property name="clearButtonEnabled">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="12" column="0">
+               <widget class="QLabel" name="label_8">
+                <property name="text">
+                 <string>Source Exclude Exts:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="2">
+               <widget class="QLineEdit" name="lineedit_source_dir">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="toolTip">
+                 <string>Source code where the main.py</string>
+                </property>
+                <property name="text">
+                 <string>.</string>
+                </property>
+               </widget>
+              </item>
+              <item row="14" column="2">
+               <widget class="QLineEdit" name="lineedit_source_exclude_patterns">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="toolTip">
+                 <string># (list) List of exclusions using pattern matching</string>
+                </property>
+                <property name="text">
+                 <string>license,images/*/*.jpg</string>
+                </property>
+               </widget>
+              </item>
+              <item row="22" column="0">
+               <spacer name="verticalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="13" column="1">
+               <widget class="QCheckBox" name="checkbox_source_include_patterns">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="21" column="1">
+               <widget class="QCheckBox" name="checkbox_services">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="15" column="0">
+               <widget class="QLabel" name="label_30">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="2">
+               <widget class="QLineEdit" name="lineedit_source_exclude_dirs">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="toolTip">
+                 <string>List of directory to exclude (let empty to not exclude anything)</string>
+                </property>
+                <property name="text">
+                 <string>tests,bin</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>Package Name:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_3">
+                <property name="text">
+                 <string>Version:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="12" column="1">
+               <widget class="QCheckBox" name="checkbox_source_exclude_exts">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="14" column="1">
+               <widget class="QCheckBox" name="checkbox_source_exclude_patterns">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="14" column="0">
+               <widget class="QLabel" name="label_10">
+                <property name="text">
+                 <string>Source Exclude Patterns:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="21" column="2">
+               <widget class="QLineEdit" name="lineedit_services">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="toolTip">
+                 <string>List of service to declare</string>
+                </property>
+                <property name="text">
+                 <string>NAME:ENTRYPOINT_TO_PY,NAME2:ENTRYPOINT2_TO_PY</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="2">
+               <widget class="QLineEdit" name="lineedit_version">
+                <property name="text">
+                 <string>0.1</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label">
+                <property name="text">
+                 <string>Title:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="2">
+               <widget class="QLineEdit" name="lineedit_package_domain">
+                <property name="toolTip">
+                 <string># (str) Package domain (needed for android/ios packaging)</string>
+                </property>
+                <property name="text">
+                 <string>org.test</string>
+                </property>
+               </widget>
+              </item>
+              <item row="20" column="0">
+               <widget class="QLabel" name="label_11">
+                <property name="text">
+                 <string>Orientation:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="21" column="0">
+               <widget class="QLabel" name="label_26">
+                <property name="text">
+                 <string>Services:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="20" column="2">
+               <widget class="QComboBox" name="combobox_orientation">
+                <property name="toolTip">
+                 <string># (str) Supported orientation (one of landscape, portrait or all)</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>landscape</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>portrait</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>all</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="13" column="0">
+               <widget class="QLabel" name="label_7">
+                <property name="text">
+                 <string>Source Include Patterns:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="13" column="2">
+               <widget class="QLineEdit" name="lineedit_source_include_patterns">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="toolTip">
+                 <string># (list) List of inclusions using pattern matching</string>
+                </property>
+                <property name="text">
+                 <string>assets/*,images/*.png</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_32">
+                <property name="text">
+                 <string>Version (regex)</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="2">
+               <widget class="QLineEdit" name="lineedit_version_regex">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string>__version__ = ['&quot;](.*)['&quot;]</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0">
+               <widget class="QLabel" name="label_64">
+                <property name="text">
+                 <string>Version (filename) </string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="1">
+               <widget class="QCheckBox" name="checkbox_version_filename">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="2">
+               <widget class="QLineEdit" name="lineedit_version_filename">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string>%(source.dir)s/main.py</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tabProject">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <attribute name="title">
+          <string>Build Environment</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QScrollArea" name="scrollArea_6">
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_7">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>503</width>
+               <height>698</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_65">
+                <property name="text">
+                 <string>Bin Dir:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_82">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="2">
+               <spacer name="verticalSpacer_6">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_83">
+                <property name="text">
+                 <string>Build Dir:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="3">
+               <widget class="QToolButton" name="toolbutton_bin_dir">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="QToolButton" name="toolbutton_build_dir">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QLineEdit" name="lineedit_build_dir">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string>./.buildozer</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_84">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <widget class="QLineEdit" name="lineedit_bin_dir">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="toolTip">
+                 <string>(str) Path to build output (i.e. .apk, .ipa) storage</string>
+                </property>
+                <property name="text">
+                 <string>./bin</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QCheckBox" name="checkbox_bin_dir">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QCheckBox" name="checkbox_build_dir">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>Preview Spec</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <property name="leftMargin">
+           <number>11</number>
+          </property>
+          <property name="topMargin">
+           <number>11</number>
+          </property>
+          <property name="rightMargin">
+           <number>11</number>
+          </property>
+          <property name="bottomMargin">
+           <number>11</number>
+          </property>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="refreshPreview">
+              <property name="text">
+               <string>Refresh</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="previewText"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>System</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <widget class="QPushButton" name="refreshSystem">
+              <property name="text">
+               <string>Refresh</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="textEditSystem">
+              <property name="html">
+               <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QTabWidget" name="tabWidget_2">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tabAndroid">
+         <attribute name="title">
+          <string>Android</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QScrollArea" name="scrollArea_2">
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="lineWidth">
+             <number>0</number>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>461</width>
+               <height>698</height>
+              </rect>
+             </property>
+             <property name="autoFillBackground">
+              <bool>true</bool>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_2">
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_21">
+                <property name="text">
+                 <string>Android Min API:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="2">
+               <widget class="QLineEdit" name="lineedit2_android_minapi">
+                <property name="toolTip">
+                 <string>Minimum API required</string>
+                </property>
+                <property name="text">
+                 <string>19</string>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="0">
+               <widget class="QLabel" name="label_13">
+                <property name="text">
+                 <string>Android ANT Path:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="1">
+               <widget class="QCheckBox" name="checkbox_android_ant_path">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_20">
+                <property name="text">
+                 <string>Android API:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_40">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="2">
+               <widget class="QLineEdit" name="lineedit_android_ant_path">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="toolTip">
+                 <string>Android ANT directory (if empty, it will be automatically downloaded.)</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="3">
+               <widget class="QToolButton" name="toolbutton_android_ant_path">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_25">
+                <property name="text">
+                 <string>Android Arch:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QComboBox" name="combobox_android_arch">
+                <property name="toolTip">
+                 <string>The Android arch to build for</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>armeabi-v7a</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>arm64-v8a</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>x86</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="2" column="2">
+               <widget class="QLineEdit" name="lineedit2_android_api">
+                <property name="toolTip">
+                 <string> Android API to use</string>
+                </property>
+                <property name="text">
+                 <string>19</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_22">
+                <property name="text">
+                 <string>Android SDK:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="0">
+               <widget class="QLabel" name="label_16">
+                <property name="text">
+                 <string>Skip SDK Update:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="15" column="0">
+               <widget class="QLabel" name="label_41">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="0">
+               <widget class="QLabel" name="label_19">
+                <property name="text">
+                 <string>Android NDK:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="17" column="0">
+               <widget class="QLabel" name="label_23">
+                <property name="text">
+                 <string>Permissions:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="16" column="0">
+               <widget class="QLabel" name="label_12">
+                <property name="text">
+                 <string>Fullscreen:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="17" column="3">
+               <widget class="QToolButton" name="permissions_android_permissions">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+              <item row="18" column="1">
+               <widget class="QCheckBox" name="checkbox_android_presplash_color">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="18" column="0">
+               <widget class="QLabel" name="label_14">
+                <property name="text">
+                 <string>Presplash Color:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0">
+               <widget class="QLabel" name="label_18">
+                <property name="text">
+                 <string>Android SDK Path:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="16" column="2">
+               <widget class="QCheckBox" name="checkbox2_fullscreen">
+                <property name="layoutDirection">
+                 <enum>Qt::LeftToRight</enum>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="18" column="2">
+               <widget class="QComboBox" name="combobox_android_presplash_color">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="editable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="18" column="3">
+               <widget class="QToolButton" name="colorpick_android_presplash_color">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+              <item row="19" column="2">
+               <widget class="QCheckBox" name="checkbox2_android_private_storage">
+                <property name="toolTip">
+                 <string>(bool) Use --private data storage (True) or --dir public storage (False)</string>
+                </property>
+                <property name="layoutDirection">
+                 <enum>Qt::LeftToRight</enum>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="19" column="0">
+               <widget class="QLabel" name="label_24">
+                <property name="text">
+                 <string>Private Storage:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="20" column="0">
+               <widget class="QLabel" name="label_58">
+                <property name="text">
+                 <string>Wakelock:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="20" column="2">
+               <widget class="QCheckBox" name="checkbox2_android_wakelock">
+                <property name="toolTip">
+                 <string># (bool) Indicate whether the screen should stay on
+# Don't forget to add the WAKE_LOCK permission if you set this to True</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="17" column="2">
+               <widget class="QLineEdit" name="lineedit_android_permissions">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string>INTERNET</string>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="21" column="0">
+               <spacer name="verticalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>103</width>
+                  <height>53</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="6" column="2">
+               <widget class="QCheckBox" name="checkbox2_android_skip_update">
+                <property name="toolTip">
+                 <string>If checked, then skip trying to update the Android sdk</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="3">
+               <widget class="QToolButton" name="toolbutton_android_sdk_path">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="1">
+               <widget class="QCheckBox" name="checkbox_android_sdk_path">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="2">
+               <widget class="QLineEdit" name="lineedit_android_sdk_path">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="toolTip">
+                 <string>Android SDK directory (if empty, it will be automatically downloaded.)</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="2">
+               <widget class="QLineEdit" name="lineedit2_android_sdk">
+                <property name="text">
+                 <string>20</string>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="0">
+               <widget class="QLabel" name="label_17">
+                <property name="toolTip">
+                 <string extracomment="Android NDK directory (if empty, it will be automatically downloaded.)"/>
+                </property>
+                <property name="statusTip">
+                 <string extracomment="yjuyftuj"/>
+                </property>
+                <property name="accessibleName">
+                 <string/>
+                </property>
+                <property name="text">
+                 <string>Android NDK Path:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="2">
+               <widget class="QLineEdit" name="lineedit2_android_ndk">
+                <property name="toolTip">
+                 <string>Android NDK version to use</string>
+                </property>
+                <property name="text">
+                 <string>9c</string>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="1">
+               <widget class="QCheckBox" name="checkbox_android_ndk_path">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="2">
+               <widget class="QLineEdit" name="lineedit_android_ndk_path">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="toolTip">
+                 <string>Android NDK directory (if empty, it will be automatically downloaded.)</string>
+                </property>
+                <property name="statusTip">
+                 <string extracomment="tuti"/>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="3">
+               <widget class="QToolButton" name="toolbutton_android_ndk_path">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+              <item row="17" column="1">
+               <widget class="QCheckBox" name="checkbox_android_permissions">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tabAndroid2">
+         <attribute name="title">
+          <string>Android (Advanced)</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QScrollArea" name="scrollArea_3">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_4">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>440</width>
+               <height>765</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <layout class="QGridLayout" name="gridLayout_3">
+                <item row="1" column="1">
+                 <widget class="QCheckBox" name="checkbox_android_add_jars">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_28">
+                  <property name="toolTip">
+                   <string> # (list) Android AAR archives to add (currently works only with sdl2_gradle
+    # bootstrap)</string>
+                  </property>
+                  <property name="text">
+                   <string>Android AAR Archives:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QCheckBox" name="checkbox_android_add_aars">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_15">
+                  <property name="text">
+                   <string>Android Jars:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <widget class="QLineEdit" name="lineedit_android_add_jars">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string># (list) List of Java .jar files to add to the libs so that pyjnius can access
+    # their classes. Don't add jars that you do not need, since extra jars can slow
+    # down the build process. Allows wildcards matching, for example:
+    # OUYA-ODK/libs/*.jar
+    #android_add_jars: foo.jar,bar.jar,path/to/more/*.jar</string>
+                  </property>
+                  <property name="text">
+                   <string>foo.jar,bar.jar,path/to/more/*.jar</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="2">
+                 <widget class="QLineEdit" name="lineedit_android_add_aars">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string># (list) Android AAR archives to add (currently works only with sdl2_gradle
+# bootstrap</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_33">
+                  <property name="text">
+                   <string>Android Entry Point:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QCheckBox" name="checkbox_android_entrypoint">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QLineEdit" name="lineedit_android_entrypoint">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>(str) Android entry point, default is ok for Kivy-based app</string>
+                  </property>
+                  <property name="text">
+                   <string>org.renpy.android.PythonActivity</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="7" column="1">
+                 <widget class="QCheckBox" name="checkbox_android_manifest_intent_filters">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="8" column="0">
+                 <widget class="QLabel" name="label_57">
+                  <property name="text">
+                   <string>Manifest Launch Mode:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="1">
+                 <widget class="QCheckBox" name="checkbox_android_gradle_dependencies">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="0">
+                 <widget class="QLabel" name="label_39">
+                  <property name="text">
+                   <string>Activities (Java classes):</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QLabel" name="label_27">
+                  <property name="toolTip">
+                   <string># (list) List of Java files to add to the android project (can be java or a
+    # directory containing the files)</string>
+                  </property>
+                  <property name="text">
+                   <string>Java Source:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="1">
+                 <widget class="QCheckBox" name="checkbox_android_add_java_src">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="7" column="0">
+                 <widget class="QLabel" name="label_56">
+                  <property name="text">
+                   <string>Manifest Intent Filters:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="7" column="2">
+                 <widget class="QLineEdit" name="lineedit_android_manifest_intent_filters">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string># (str) XML file to include as an intent filters in &lt;activity&gt; tag</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="0">
+                 <widget class="QLabel" name="label_38">
+                  <property name="text">
+                   <string>Gradle Dependencies:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="2">
+                 <widget class="QLineEdit" name="lineedit_android_add_java_src">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string># (list) List of Java files to add to the android project (can be java or a
+# directory containing the files)</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="2">
+                 <widget class="QLineEdit" name="lineedit_android_gradle_dependencies">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>(list) Gradle dependencies to add (currently works only with sdl2_gradle # bootstrap)</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="1">
+                 <widget class="QCheckBox" name="checkbox_android_add_activities">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="2">
+                 <widget class="QLineEdit" name="lineedit_android_add_activities">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string># (list) Java classes to add as activities to the manifest.</string>
+                  </property>
+                  <property name="text">
+                   <string>com.example.ExampleActivity</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="0">
+                 <widget class="QLabel" name="label_48">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="22" column="0">
+                 <widget class="QLabel" name="label_53">
+                  <property name="text">
+                   <string>MIPS Libs</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="22" column="1">
+                 <widget class="QCheckBox" name="checkbox_android_add_libs_mips">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="20" column="0">
+                 <widget class="QLabel" name="label_51">
+                  <property name="text">
+                   <string>Armeabi v7a Libs</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="11" column="0">
+                 <widget class="QLabel" name="label_61">
+                  <property name="text">
+                   <string>Library References:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="22" column="2">
+                 <widget class="QLineEdit" name="lineedit_android_add_libs_mips">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="text">
+                   <string>libs/android-mips/*.so</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="23" column="0">
+                 <widget class="QLabel" name="label_49">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="8" column="1">
+                 <widget class="QCheckBox" name="checkbox_android_manifest_launch_mode">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="11" column="1">
+                 <widget class="QCheckBox" name="checkbox_android_library_references">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="10" column="2">
+                 <widget class="QLineEdit" name="lineedit_android_meta_data">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string># (list) Android application meta-data to set (key=value format)</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="10" column="1">
+                 <widget class="QCheckBox" name="checkbox_android_meta_data">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="12" column="1">
+                 <widget class="QCheckBox" name="checkbox_android_logcat_filters">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="8" column="2">
+                 <widget class="QLineEdit" name="lineedit_android_manifest_launch_mode">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string># (str) launchMode to set for the main activity</string>
+                  </property>
+                  <property name="text">
+                   <string>standard</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="12" column="0">
+                 <widget class="QLabel" name="label_60">
+                  <property name="text">
+                   <string>Logcat Filters:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="13" column="1">
+                 <widget class="QCheckBox" name="checkbox_android_copy_libs">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="18" column="0">
+                 <widget class="QLabel" name="label_37">
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="toolTip">
+                   <string># (list) Android additionnal libraries to copy into libs/armeabi</string>
+                  </property>
+                  <property name="text">
+                   <string>Additional Libraries</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="13" column="0">
+                 <widget class="QLabel" name="label_63">
+                  <property name="text">
+                   <string>Copy Libraries:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="19" column="0">
+                 <widget class="QLabel" name="label_50">
+                  <property name="text">
+                   <string>Armeabi Libs</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="13" column="2">
+                 <widget class="QLineEdit" name="lineedit_android_copy_libs">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>(bool) Copy library instead of making a libpymodules.so</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="9" column="0">
+                 <widget class="QLabel" name="label_55">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="14" column="0">
+                 <widget class="QLabel" name="label_62">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="19" column="1">
+                 <widget class="QCheckBox" name="checkbox_android_add_libs_armeabi">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="10" column="0">
+                 <widget class="QLabel" name="label_59">
+                  <property name="text">
+                   <string>Android Meta-data:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="20" column="1">
+                 <widget class="QCheckBox" name="checkbox_android_add_libs_armeabi_v7a">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="20" column="2">
+                 <widget class="QLineEdit" name="lineedit_android_add_libs_armeabi_v7a">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="text">
+                   <string>libs/android-v7/*.so</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="19" column="2">
+                 <widget class="QLineEdit" name="lineedit_android_add_libs_armeabi">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="text">
+                   <string>libs/android/*.so</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="21" column="0">
+                 <widget class="QLabel" name="label_52">
+                  <property name="text">
+                   <string>x86 Libs</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="21" column="1">
+                 <widget class="QCheckBox" name="checkbox_android_add_libs_x86">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="12" column="2">
+                 <widget class="QLineEdit" name="lineedit_android_logcat_filters">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string># (str) Android logcat filters to use</string>
+                  </property>
+                  <property name="text">
+                   <string>*:S python:D</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="21" column="2">
+                 <widget class="QLineEdit" name="lineedit_android_add_libs_x86">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="text">
+                   <string>libs/android-x86/*.so</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="11" column="2">
+                 <widget class="QLineEdit" name="lineedit_android_library_references">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string># (list) Android library project to add (will be added in the
+# project.properties automatically.)</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="25" column="2">
+                 <widget class="QComboBox" name="combobox_android_ouya_category">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string># (str) OUYA Console category. Should be one of GAME or APP
+# If you leave this blank, OUYA support will not be enabled</string>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>APP</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>GAME</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="26" column="0">
+                 <widget class="QLabel" name="label_36">
+                  <property name="text">
+                   <string>Ouya Icon: (732x412 PNG)</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="24" column="0">
+                 <widget class="QLabel" name="label_54">
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Ouya</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="25" column="0">
+                 <widget class="QLabel" name="label_35">
+                  <property name="text">
+                   <string>Ouya Category:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="26" column="1">
+                 <widget class="QCheckBox" name="checkbox_android_ouya_icon_filename">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="26" column="2">
+                 <widget class="QLineEdit" name="lineedit_android_ouya_icon_filename">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string># (str) Filename of OUYA Console icon. It must be a 732x412 png image.</string>
+                  </property>
+                  <property name="text">
+                   <string>%(source.dir)s/data/ouya_icon.png</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="27" column="2">
+                 <spacer name="verticalSpacer_4">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="16" column="0">
+                 <widget class="QLabel" name="label_68">
+                  <property name="text">
+                   <string>Android Blacklist:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="15" column="0">
+                 <widget class="QLabel" name="label_69">
+                  <property name="text">
+                   <string>Android Whitelist:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="15" column="1">
+                 <widget class="QCheckBox" name="checkbox_android_whitelist">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="16" column="1">
+                 <widget class="QCheckBox" name="checkbox_android_blacklist">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="17" column="0">
+                 <widget class="QLabel" name="label_70">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="16" column="2">
+                 <widget class="QLineEdit" name="lineedit_android_blacklist">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>blacklist file</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="15" column="2">
+                 <widget class="QLineEdit" name="lineedit_android_whitelist">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>(list) Pattern to whitelist for the whole project</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="25" column="1">
+                 <widget class="QCheckBox" name="checkbox_android_ouya_category">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tabP4A">
+         <property name="toolTip">
+          <string>Python for android (p4a) specific</string>
+         </property>
+         <attribute name="title">
+          <string>Python-For-Android</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QScrollArea" name="scrollArea_4">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_5">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>461</width>
+               <height>698</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <layout class="QGridLayout" name="gridLayout_6">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_34">
+                  <property name="text">
+                   <string>P4A Branch:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QCheckBox" name="checkbox_p4a_branch">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QLineEdit" name="lineedit_p4a_branch">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>(str) python-for-android branch to use, defaults to stable</string>
+                  </property>
+                  <property name="text">
+                   <string>stable</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_42">
+                  <property name="text">
+                   <string>P4A Source Dir:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_43">
+                  <property name="text">
+                   <string>P4A Recipes Dir:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QLabel" name="label_44">
+                  <property name="text">
+                   <string>P4A Hook:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="0">
+                 <widget class="QLabel" name="label_45">
+                  <property name="text">
+                   <string>P4A Bootstrap:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="0">
+                 <widget class="QLabel" name="label_46">
+                  <property name="text">
+                   <string>P4A Port:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="2">
+                 <spacer name="verticalSpacer_3">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>13</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="5" column="1">
+                 <widget class="QCheckBox" name="checkbox_p4a_port">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="1">
+                 <widget class="QCheckBox" name="checkbox_p4a_bootstrap">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="1">
+                 <widget class="QCheckBox" name="checkbox_p4a_hook">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QCheckBox" name="checkbox_p4a_local_recipes">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QCheckBox" name="checkbox_p4a_source_dir">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="2">
+                 <widget class="QLineEdit" name="lineedit_p4a_port">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>(int) port number to specify an explicit --port= p4a argument (eg for bootstrap flask)</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="2">
+                 <widget class="QLineEdit" name="lineedit_p4a_bootstrap">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>(str) Bootstrap to use for android builds</string>
+                  </property>
+                  <property name="text">
+                   <string>sdl2</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="2">
+                 <widget class="QLineEdit" name="lineedit_p4a_hook">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>(str) Filename to the hook for p4a</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="2">
+                 <widget class="QLineEdit" name="lineedit_p4a_local_recipes">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>(str) The directory in which python-for-android should look for your own build recipes (if any)</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <widget class="QLineEdit" name="lineedit_p4a_source_dir">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>(str) python-for-android git clone directory (if empty, it will be automatically cloned from github)</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tabIOS">
+         <attribute name="title">
+          <string>iOS</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QScrollArea" name="scrollArea_5">
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_6">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>461</width>
+               <height>698</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <property name="leftMargin">
+               <number>11</number>
+              </property>
+              <item>
+               <layout class="QGridLayout" name="gridLayout_5">
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_66">
+                  <property name="text">
+                   <string>IOS Codesign Debug:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QCheckBox" name="checkbox_ios_codesign_debug">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <widget class="QLineEdit" name="lineedit_ios_codesign_debug">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string># (str) Name of the certificate to use for signing the debug version
+# Get a list of available identities: buildozer ios list_identities</string>
+                  </property>
+                  <property name="text">
+                   <string>&quot;iPhone Developer: &lt;lastname&gt; &lt;firstname&gt; (&lt;hexstring&gt;)&quot;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QCheckBox" name="checkbox_ios_kivy_ios_dir">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_47">
+                  <property name="text">
+                   <string>IOS Kivy Dir:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QLineEdit" name="lineedit_ios_kivy_ios_dir">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>(str) Path to a custom kivy-ios folder</string>
+                  </property>
+                  <property name="text">
+                   <string>../kivy-ios</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="2">
+                 <spacer name="verticalSpacer_5">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_67">
+                  <property name="text">
+                   <string>IOS Codesign Release:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QCheckBox" name="checkbox_ios_codesign_release">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="2">
+                 <widget class="QLineEdit" name="lineedit_ios_codesign_release">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string>(str) Name of the certificate to use for signing the release version</string>
+                  </property>
+                  <property name="text">
+                   <string>%(ios.codesign_debug)s</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tabOSX">
+         <attribute name="title">
+          <string>OSX</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QScrollArea" name="scrollArea_7">
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="lineWidth">
+             <number>0</number>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_8">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>461</width>
+               <height>698</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <layout class="QGridLayout" name="gridLayout_7">
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_71">
+                  <property name="text">
+                   <string>OSX Python Version:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_72">
+                  <property name="text">
+                   <string>OSX Kivy Version:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <widget class="QSpinBox" name="spinbox_osx_python_version">
+                  <property name="toolTip">
+                   <string># change the major version of python used by the app</string>
+                  </property>
+                  <property name="minimum">
+                   <number>2</number>
+                  </property>
+                  <property name="value">
+                   <number>3</number>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="2">
+                 <widget class="QLineEdit" name="lineedit_osx_kivy_version">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="toolTip">
+                   <string># Kivy version to use</string>
+                  </property>
+                  <property name="text">
+                   <string>1.9.1</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QCheckBox" name="checkbox_osx_kivy_version">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_73">
+                  <property name="text">
+                   <string>Author</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QLineEdit" name="lineedit_author">
+                  <property name="text">
+                   <string>© Copyright Info</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_7">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuRecentFiles">
+     <property name="title">
+      <string>Recent Files...</string>
+     </property>
+     <addaction name="separator"/>
+    </widget>
+    <addaction name="actionNew"/>
+    <addaction name="actionLoad"/>
+    <addaction name="menuRecentFiles"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_As"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <widget class="QMenu" name="menuClean">
+     <property name="title">
+      <string>Clean</string>
+     </property>
+     <addaction name="actionClean_2"/>
+     <addaction name="actionDist_Clean"/>
+    </widget>
+    <addaction name="menuClean"/>
+    <addaction name="actionSettings"/>
+    <addaction name="actionDeploy"/>
+    <addaction name="actionRun"/>
+    <addaction name="actionServe"/>
+    <addaction name="separator"/>
+    <addaction name="actionSettings_4"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionSubmit_Issue"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Build</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About...</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionLoad">
+   <property name="text">
+    <string>Load</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="text">
+    <string>Save As...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionClean_2">
+   <property name="text">
+    <string>Clean</string>
+   </property>
+  </action>
+  <action name="actionDist_Clean">
+   <property name="text">
+    <string>Dist Clean</string>
+   </property>
+  </action>
+  <action name="actionSettings_2">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+   <property name="shortcut">
+    <string>F10</string>
+   </property>
+  </action>
+  <action name="actionSubmit_Issue">
+   <property name="text">
+    <string>Submit Issue</string>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
+   </property>
+  </action>
+  <action name="actionDeploy">
+   <property name="text">
+    <string>Deploy</string>
+   </property>
+   <property name="shortcut">
+    <string>F6</string>
+   </property>
+  </action>
+  <action name="actionRun">
+   <property name="text">
+    <string>Run</string>
+   </property>
+   <property name="shortcut">
+    <string>F7</string>
+   </property>
+  </action>
+  <action name="actionClear_Recent_Files">
+   <property name="text">
+    <string>Clear Recent Files</string>
+   </property>
+  </action>
+  <action name="actionSettings_3">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionSettings_4">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+   <property name="shortcut">
+    <string>F10</string>
+   </property>
+  </action>
+  <action name="actionServe">
+   <property name="text">
+    <string>Serve</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>checkbox_source_exclude_dirs</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_source_exclude_dirs</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>363</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>272</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_source_exclude_patterns</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_source_exclude_patterns</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>479</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>271</x>
+     <y>482</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_source_exclude_exts</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_source_exclude_exts</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>421</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>305</x>
+     <y>424</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_source_include_patterns</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_source_include_patterns</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>450</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>278</x>
+     <y>453</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_source_include_exts</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_source_include_exts</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>392</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>295</x>
+     <y>395</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_services</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_services</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>676</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>470</x>
+     <y>679</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_ant_path</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_ant_path</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>663</x>
+     <y>340</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>939</x>
+     <y>343</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_ndk_path</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_ndk_path</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>663</x>
+     <y>311</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>939</x>
+     <y>314</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_presplash_color</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>combobox_android_presplash_color</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>663</x>
+     <y>444</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>939</x>
+     <y>447</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_sdk_path</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_sdk_path</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>663</x>
+     <y>230</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>939</x>
+     <y>233</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_requirements</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_requirements</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>531</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>345</x>
+     <y>534</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_garden_requirements</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_garden_requirements</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>560</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>300</x>
+     <y>563</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_presplash_filename</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_presplash_filename</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>589</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>287</x>
+     <y>592</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_icon_filename</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_icon_filename</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>618</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>356</x>
+     <y>621</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_ant_path</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_ant_path</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>663</x>
+     <y>340</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>939</x>
+     <y>343</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_entrypoint</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_entrypoint</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>90</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>951</x>
+     <y>90</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_add_aars</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_add_aars</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>150</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>951</x>
+     <y>153</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_add_java_src</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_add_java_src</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>951</x>
+     <y>182</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_gradle_dependencies</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_gradle_dependencies</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>208</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>951</x>
+     <y>211</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_add_activities</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_add_activities</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>237</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>951</x>
+     <y>240</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_manifest_intent_filters</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_manifest_intent_filters</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>289</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>951</x>
+     <y>292</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_manifest_launch_mode</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_manifest_launch_mode</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>318</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>951</x>
+     <y>321</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_meta_data</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_meta_data</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>370</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>951</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_library_references</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_library_references</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>399</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>951</x>
+     <y>402</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_logcat_filters</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_logcat_filters</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>428</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>951</x>
+     <y>431</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_copy_libs</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_copy_libs</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>457</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>951</x>
+     <y>460</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_whitelist</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_whitelist</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>509</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>951</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_blacklist</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_blacklist</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>538</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>951</x>
+     <y>541</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_add_libs_armeabi</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_add_libs_armeabi</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>613</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>951</x>
+     <y>616</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_add_libs_armeabi_v7a</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_add_libs_armeabi_v7a</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>642</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>951</x>
+     <y>645</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_add_libs_x86</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_add_libs_x86</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>671</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>951</x>
+     <y>674</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_add_libs_mips</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_add_libs_mips</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>700</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>951</x>
+     <y>703</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_ouya_icon_filename</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_ouya_icon_filename</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>804</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>951</x>
+     <y>807</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_p4a_branch</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_p4a_branch</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>653</x>
+     <y>92</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>910</x>
+     <y>82</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_p4a_source_dir</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_p4a_source_dir</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>653</x>
+     <y>121</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>899</x>
+     <y>115</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_p4a_local_recipes</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_p4a_local_recipes</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>653</x>
+     <y>150</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>884</x>
+     <y>146</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_p4a_hook</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_p4a_hook</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>653</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>904</x>
+     <y>176</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_p4a_bootstrap</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_p4a_bootstrap</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>653</x>
+     <y>208</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>905</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_p4a_port</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_p4a_port</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>653</x>
+     <y>237</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>907</x>
+     <y>231</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_ios_kivy_ios_dir</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_ios_kivy_ios_dir</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>689</x>
+     <y>92</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>918</x>
+     <y>91</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_ios_codesign_debug</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_ios_codesign_debug</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>689</x>
+     <y>121</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>921</x>
+     <y>117</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_ios_codesign_release</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_ios_codesign_release</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>689</x>
+     <y>150</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>922</x>
+     <y>143</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_osx_kivy_version</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_osx_kivy_version</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>677</x>
+     <y>150</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>900</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>menuBar</sender>
+   <signal>triggered(QAction*)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>onMenubar(QAction*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>322</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>348</x>
+     <y>799</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_bin_dir</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_bin_dir</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>98</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>146</x>
+     <y>123</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_build_dir</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_build_dir</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>91</x>
+     <y>82</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>183</x>
+     <y>88</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>refreshPreview</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>refreshPreview()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>330</x>
+     <y>93</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>289</x>
+     <y>817</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_permissions</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_android_permissions</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>663</x>
+     <y>415</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>796</x>
+     <y>409</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_android_ouya_category</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>combobox_android_ouya_category</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>775</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>951</x>
+     <y>778</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>refreshSystem</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>refreshSystemDetails()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>356</x>
+     <y>91</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>187</x>
+     <y>888</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_version_regex</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_version_regex</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>191</x>
+     <y>195</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>309</x>
+     <y>195</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkbox_version_filename</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineedit_version_filename</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>192</x>
+     <y>224</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>221</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <signal>signal1()</signal>
+  <slot>checkBoxStateChanged(int,QString)</slot>
+  <slot>onMenubar(QAction*)</slot>
+  <slot>onEnvPathEdit(QString)</slot>
+  <slot>updateBuildPaths()</slot>
+  <slot>refreshPreview()</slot>
+  <slot>refreshSystemDetails()</slot>
+ </slots>
+</ui>
