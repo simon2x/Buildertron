@@ -1,2 +1,0 @@
-# Buildertron
-Buildozer GUI
