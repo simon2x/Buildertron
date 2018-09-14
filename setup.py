@@ -39,7 +39,11 @@ setup(name=__projectname__,
       package_data={'': ["icons/*.png", "splash.png", "buildertron.png"]},
       data_files=[('share/applications', ['data/Buildertron.desktop']),
                   ('share/buildertron', ['buildertron/buildertron.png'])],
-      install_requires=["pyqt5"],
+      install_requires=[
+        'pyqt5==5.10.0;python_version=="3.4"',
+        'pyqt5==5.10.0;python_version=="3.5"',
+        'pyqt5;python_version>"3.6"'
+      ],
       classifiers=__classifiers__,
       test_suite='tests',
       tests_require=[],
