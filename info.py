@@ -1,7 +1,8 @@
 from os import path
+from buildertron.version import __version__
 
 __projectname__ = 'buildertron'
-__version__ = '0.1.1'
+# __version__ = '0.1.1'
 __homepage__ = 'https://github.com/swprojects/Buildertron'
 __author__ = 'Simon Wu'
 __description__ = 'A buildozer front-end for Linux'
