@@ -41,7 +41,7 @@ setup(name=__projectname__,
                   ('share/buildertron', ['buildertron/buildertron.png'])],
       install_requires=[
         'pyqt5==5.10.0;python_version<"3.6"',
-        'pyqt5;python_version>"3.6"'
+        'pyqt5;python_version>="3.6"'
       ],
       classifiers=__classifiers__,
       test_suite='tests',
