@@ -8,6 +8,15 @@ Buildertron is a front-end for kivy's buildozer script.
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
+<br />  
+<br /> 
+<br /> 
+<br /> 
+<br />  
+<br /> 
+<br /> 
+
+
 #
 # SCREENSHOTS
 <img align="center" src="resources/screenshots/main.png?raw=true"/>

@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'aboutdialog.ui'
 #
-# Created by: PyQt5 UI code generator 5.10
+# Created by: PyQt5 UI code generator 5.11.2
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -15,6 +15,7 @@ class Ui_AboutDialog(object):
         self.gridLayout = QtWidgets.QGridLayout(AboutDialog)
         self.gridLayout.setObjectName("gridLayout")
         self.label_5 = QtWidgets.QLabel(AboutDialog)
+        self.label_5.setOpenExternalLinks(True)
         self.label_5.setObjectName("label_5")
         self.gridLayout.addWidget(self.label_5, 3, 1, 1, 1)
         spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
@@ -40,6 +41,7 @@ class Ui_AboutDialog(object):
         self.label_6.setObjectName("label_6")
         self.gridLayout.addWidget(self.label_6, 1, 0, 1, 1)
         self.label_7 = QtWidgets.QLabel(AboutDialog)
+        self.label_7.setOpenExternalLinks(True)
         self.label_7.setObjectName("label_7")
         self.gridLayout.addWidget(self.label_7, 1, 1, 1, 1)
         self.labelVersion = QtWidgets.QLabel(AboutDialog)
@@ -54,12 +56,13 @@ class Ui_AboutDialog(object):
     def retranslateUi(self, AboutDialog):
         _translate = QtCore.QCoreApplication.translate
         AboutDialog.setWindowTitle(_translate("AboutDialog", "About Buildertron..."))
-        self.label_5.setText(_translate("AboutDialog", "https://github.com/swprojects/Buildertron"))
+        self.label_5.setText(_translate("AboutDialog", "<a href=\'https://github.com/swprojects/Buildertron\'>https://github.com/swprojects/Buildertron</a>"))
         self.label.setText(_translate("AboutDialog", "Buildertron"))
         self.label_2.setText(_translate("AboutDialog", "Author"))
         self.label_4.setText(_translate("AboutDialog", "Homepage"))
         self.label_3.setText(_translate("AboutDialog", "Simon Wu"))
         self.label_6.setText(_translate("AboutDialog", "License"))
-        self.label_7.setText(_translate("AboutDialog", "The MIT License - https://opensource.org/licenses/MIT"))
+        self.label_7.setText(_translate("AboutDialog", "<a href=\'https://opensource.org/licenses/MIT\'>The MIT License</a>\n"
+""))
         self.labelVersion.setText(_translate("AboutDialog", "v0.0"))
 

@@ -2,8 +2,10 @@
 import os
 import os.path
 
-
-os.chdir(os.path.split(__file__)[0])
+try:
+    os.chdir(os.path.split(__file__)[0])
+except OSError:
+    pass
 
 files = [f for f in os.listdir('.') if os.path.isfile(f)]
 for f in files:
